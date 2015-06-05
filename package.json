@@ -1,0 +1,19 @@
+{
+  "name": "trac-kets",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reidan/trac-kets"
+  },
+  "author": "reidan::git",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reidan/trac-kets/issues"
+  },
+  "homepage": "https://github.com/reidan/trac-kets"
+}
