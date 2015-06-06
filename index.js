@@ -1,10 +1,13 @@
-var http = require('http');
+var express = require('express');
+var app = express();
 
-function serverFunc( req, res ) {
-	res.writeHead( 200 );
-	res.end( 'Hello HTTP' );
-};	
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/public'));
 
+app.get('/', function(request, response) {
+  response.send('Hello World!');
+});
 
-var server = http.createServer( serverFunc );
-server.listen( 8080 );
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
